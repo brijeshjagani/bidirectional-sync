@@ -1,0 +1,30 @@
+pipeline:
+  name: Bidirection Sync
+  identifier: Bidirection_Sync
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: AA
+        identifier: AA
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: AA
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
