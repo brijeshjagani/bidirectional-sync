@@ -1,6 +1,6 @@
 template:
-  name: Temp - 76145
-  identifier: Temp_76145
+  name: Test Temp - 76145
+  identifier: TestTemp_76145
   versionLabel: "1.1"
   type: Stage
   projectIdentifier: default_project
