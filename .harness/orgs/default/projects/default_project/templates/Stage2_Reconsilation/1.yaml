@@ -1,0 +1,19 @@
+template:
+  name: Stage2_Reconsilation
+  identifier: Stage2_Reconsilation
+  versionLabel: "1"
+  type: Stage
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: step2
+              identifier: step2
+              template:
+                templateRef: Step2_Reconsilation
+                versionLabel: "1"
