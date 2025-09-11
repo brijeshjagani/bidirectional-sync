@@ -17,3 +17,6 @@ template:
               template:
                 templateRef: Step2_Reconsilation
                 versionLabel: "1"
+                templateInputs:
+                  type: ShellScript
+                  timeout: <+input>
