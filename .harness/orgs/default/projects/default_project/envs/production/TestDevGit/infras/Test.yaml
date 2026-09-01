@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: Test
+  identifier: Test
+  orgIdentifier: default
+  projectIdentifier: default_project
+  environmentRef: TestDevGit
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: account.austinsandboxk8s
+    namespace: test
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
