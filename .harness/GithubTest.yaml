@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: GithubTest
+  identifier: GithubTest
+  orgIdentifier: default
+  projectIdentifier: default_project
+  environmentRef: Test_Dev
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: account.gcpcluster
+    namespace: brijesh
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
